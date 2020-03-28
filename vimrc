@@ -1,4 +1,4 @@
-"let mapleader=" "
+let mapleader=" "
 
 syntax enable
 set number
@@ -72,6 +72,9 @@ map sh <C-w>t<C-w>K
 
 call plug#begin('~/.vim/plugged')  "安装插件
 
+Plug 'lifepillar/vim-gruvbox8'
+Plug 'KeitaNakamura/neodark.vim'
+Plug 'morhetz/gruvbox'
 Plug 'nanotech/jellybeans.vim'
 Plug 'altercation/vim-colors-solarized'
 Plug 'rakr/vim-one'
@@ -139,6 +142,7 @@ Plug 'fadein/vim-FIGlet'
 
 call plug#end()
 
+set t_Co=256
 "hi Normal ctermbg=252 ctermbg=None
 "let g:molokai_original = 1
 "let g:rehash256 = 1
@@ -154,16 +158,32 @@ call plug#end()
 "let g:solarized_termcolors=256
 "colorscheme solarized
 
-let g:jellybeans_overrides = {
-\    'background': { 'ctermbg': 'none', '256ctermbg': 'none' },
-\}
-if has('termguicolors') && &termguicolors
-    let g:jellybeans_overrides['background']['guibg'] = 'none'
-endif
-colorscheme jellybeans
+"let g:jellybeans_overrides = {
+"\    'background': { 'ctermbg': 'none', '256ctermbg': 'none' },
+"\    'Todo': { 'guifg': '303030', 'guibg': 'f0f000',
+"\              'ctermfg': 'Black', 'ctermbg': 'Yellow',
+"\              'attr': 'bold' },
+"\    'Comment': { 'guifg': 'cccccc' },
+"\    'MatchParen': { 'guifg': 'dd0093', 'guibg': '000000',
+"\                    'ctermfg': 'Magenta', 'ctermbg': '' },
+"\}
+"if has('termguicolors') && &termguicolors
+"    let g:jellybeans_overrides['background']['guibg'] = 'none'
+"endif
+"colorscheme jellybeans
+
+"let g:neodark#terminal_transparent = 1
+"let g:neodark#use_custom_terminal_theme = 1
+"colorscheme neodark
+"let g:neodark#use_256color = 1
 
 "let g:SnazzyTransparent = 1 "设置透明背景
 "color snazzy
+
+let g:gruvbox_filetype_hi_groups = 1
+let g:gruvbox_plugin_hi_groups = 1
+let g:gruvbox_transp_bg = 1
+colorscheme gruvbox8
 
 " ===
 " === NERDTree
