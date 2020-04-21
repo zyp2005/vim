@@ -72,6 +72,7 @@ map sh <C-w>t<C-w>K
 
 call plug#begin('~/.vim/plugged')  "安装插件
 
+Plug 'jiangmiao/auto-pairs'
 Plug 'lifepillar/vim-gruvbox8'
 Plug 'KeitaNakamura/neodark.vim'
 Plug 'morhetz/gruvbox'
@@ -81,6 +82,10 @@ Plug 'rakr/vim-one'
 Plug 'joshdick/onedark.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'connorholyday/vim-snazzy'
+Plug 'liuchengxu/space-vim-dark'
+Plug 'skreek/skeletor.vim'
+Plug 'beikome/cosme.vim'
+Plug 'hzchirs/vim-material'
 " File navigation
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -142,21 +147,21 @@ Plug 'fadein/vim-FIGlet'
 
 call plug#end()
 
-set t_Co=256
-"hi Normal ctermbg=252 ctermbg=None
+"set t_Co=256
+"colorscheme molokai
 "let g:molokai_original = 1
 "let g:rehash256 = 1
-"colorscheme molokai
 
 "colorscheme onedark
 "let g:onedark_termcolors=256
 
 "colorscheme one
+"let g:airline_theme='gruvbox'
 
 "set background=dark
+"colorscheme solarized
 "let g:solarized_termtrans=1
 "let g:solarized_termcolors=256
-"colorscheme solarized
 
 "let g:jellybeans_overrides = {
 "\    'background': { 'ctermbg': 'none', '256ctermbg': 'none' },
@@ -180,11 +185,31 @@ set t_Co=256
 "let g:SnazzyTransparent = 1 "设置透明背景
 "color snazzy
 
+"colorscheme cosme
+
+"let g:material_style='oceanic'
+"set background=dark
+"colorscheme vim-material
+
+colorscheme gruvbox
+set termguicolors
+let g:gruvbox_italc=1
 let g:gruvbox_filetype_hi_groups = 1
 let g:gruvbox_plugin_hi_groups = 1
 let g:gruvbox_transp_bg = 1
-colorscheme gruvbox8
 
+"syntax on
+"colo skeletor
+
+"colorscheme space-vim-dark
+"set termguicolors
+"hi Comment cterm=italic
+hi Normal       ctermbg=NONE guibg=NONE
+hi LineNr       ctermbg=NONE guibg=NONE
+hi SignColumn   ctermbg=NONE guibg=NONE
+"hi Comment guifg=#5C6370 ctermbg=59
+
+"hi Normal ctermbg=252 ctermbg=None
 " ===
 " === NERDTree
 " ===
@@ -404,6 +429,7 @@ nmap <leader>rn <Plug>(coc-rename)
 " Formatting selected code.
 xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
+autocmd CursorHold * silent call CocActionAsync('highlight')
 
 augroup mygroup
   autocmd!
