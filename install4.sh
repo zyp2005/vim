@@ -1,6 +1,6 @@
 sudo pacman -S xf86-video-intel xorg xorg-xinit wqy-microhei i3 feh compton \
 	polybar ttf-font-awesome sakura clang fcitx-im fcitx-configtool \
-	chromium fcitx-googlepinyin rofi curl neovim
+	chromium fcitx-googlepinyin rofi curl neovim alsa-utils alsa-tools
 mkdir .config
 mkdir .config/i3 .config/polybar .config/sakura
 cp vim/.xinitrc .xinitrc
