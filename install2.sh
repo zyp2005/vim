@@ -3,7 +3,7 @@ ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 hwclock --systohc
 pacman -Syu
 pacman -S vim dhcpcd dialog wpa_supplicant ntfs-3g networkmanager netctl \
-	intel-ucode grub 
+	intel-ucode grub git 
 echo "zh_CN.UTF-8 UTF-8" >> /etc/locale.gen
 echo "zh_TW.UTF-8 UTF-8" >> /etc/locale.gen
 echo "zh_HK.UTF-8 UTF-8" >> /etc/locale.gen
@@ -20,8 +20,6 @@ echo "127.0.1.1	   	zyp-a.localdomain	zyp-a" >> /etc/hosts
 passwd
 grub-install --target=i386-pc /dev/sdc
 grub-mkconfig -o /boot/grub/grub.cfg
-systemctl start NetworkManger
-systemctl enable NetworkManger
-nmtui
+systemctl enable NetworkManager
 
 
