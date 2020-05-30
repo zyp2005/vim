@@ -1,11 +1,14 @@
 sudo pacman -S xf86-video-intel xorg xorg-xinit wqy-microhei i3 feh compton \
 	polybar ttf-font-awesome sakura clang fcitx-im fcitx-configtool \
-	chromium fcitx-googlepinyin rofi curl
+	chromium fcitx-googlepinyin rofi curl neovim
+mkdir .config
+mkdir .config/i3 .config/polybar .config/sakura
 cp vim/.xinitrc .xinitrc
 cp vim/config/i3/config .config/i3/
-cp vim/polybar/config   .config/polybar/
-cp vim/polybar/launch.sh   .config/polybar/
+cp vim/config/polybar/config   .config/polybar/
+cp vim/config/polybar/launch.sh   .config/polybar/
 cp vim/config/sakura/sakura.conf  .config/sakura/
+chmod +x ~/.config/polybar/launch.sh
 echo "export LANG=zh_CN.UTF-8" >> .bashrc
 echo "export LC_ALL=zh_CN.UTF-8" >> .bashrc
 echo "export GTK_IM_MODULE=\"fcitx\"" >> .bashrc

@@ -24,7 +24,7 @@ echo -e "# Github\n \
 192.30.253.118 gist.github.com\n \
 185.199.108.153 help.github.com\n \
 192.30.253.120 nodeload.github.com\n \
-151.101.184.133 raw.github.com\n \
+#151.101.184.133 raw.github.com\n \
 18.204.240.114 status.github.com\n \
 192.30.253.166 training.github.com\n \
 192.30.253.112 www.github.com\n \
