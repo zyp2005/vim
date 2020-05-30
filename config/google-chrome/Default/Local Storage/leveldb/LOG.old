@@ -1,9 +1,0 @@
-2020/05/30-02:59:36.752 5ca Reusing MANIFEST /home/zyp/.config/google-chrome/Default/Local Storage/leveldb/MANIFEST-000001
-2020/05/30-02:59:36.752 5ca Recovering log #3
-2020/05/30-02:59:36.753 5ca Reusing old log /home/zyp/.config/google-chrome/Default/Local Storage/leveldb/000003.log 
-2020/05/30-03:00:53.428 6f1 Level-0 table #5: started
-2020/05/30-03:00:56.983 6f1 Level-0 table #5: 71381 bytes OK
-2020/05/30-03:01:03.151 6f1 Delete type=0 #3
-2020/05/30-03:01:53.427 6f1 Level-0 table #7: started
-2020/05/30-03:02:00.841 6f1 Level-0 table #7: 57437 bytes OK
-2020/05/30-03:02:12.071 6f1 Delete type=0 #4
