@@ -1,7 +1,7 @@
 sudo pacman -S xf86-video-intel xorg xorg-xinit wqy-microhei i3 feh compton \
 	polybar ttf-font-awesome sakura clang fcitx-im fcitx-configtool \
 	chromium fcitx-googlepinyin rofi curl neovim alsa alsa-utils \
-	nodejs npm 
+	nodejs npm fzf 
 mkdir .config
 mkdir .config/i3 .config/polybar .config/sakura
 cp vim/.xinitrc .xinitrc
@@ -20,6 +20,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 cp vim/vimrc .vim/
 mkdir picture
 cp vim/20120806133222_2R2eN.jpeg picture
-echo"done"
+yay -S ls powerline-fonts-git
+echo "done"
 
 
