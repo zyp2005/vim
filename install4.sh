@@ -20,7 +20,10 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 cp vim/vimrc .vim/
 mkdir picture
 cp vim/20120806133222_2R2eN.jpeg picture
+sudo pacman -S alsa-firmware alsa-tools pulseaudio-alsa
 yay -S lf powerline-fonts-git
+yay -S mate-media
+yay -S wps-office-cn cups  ttf-wps-fonts wps-office-mime-cn wps-office-mui-zh-cn wps-office-fonts
 echo "done"
 
 
