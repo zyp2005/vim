@@ -20,7 +20,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 cp vim/vimrc .vim/
 mkdir picture
 cp vim/20120806133222_2R2eN.jpeg picture
-yay -S ls powerline-fonts-git
+yay -S lf powerline-fonts-git
 echo "done"
 
 
