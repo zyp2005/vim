@@ -32,7 +32,7 @@ echo -e "# Github\n \
 151.101.184.133 avatars0.githubusercontent.com\n \
 151.101.184.133 avatars1.githubusercontent.com" >> /etc/hosts
 passwd
-grub-install --target=i386-pc /dev/sdc
+grub-install --target=i386-pc /dev/sd<+>
 grub-mkconfig -o /boot/grub/grub.cfg
 systemctl enable NetworkManager
 

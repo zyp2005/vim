@@ -2,9 +2,9 @@
 wifi-menu
 ping baidu.com 
 timedatectl set-ntp true
-fdisk /dev/sdc
+fdisk /dev/sd<+>
 mkfs.ext4 /dev/sdc1
-mount /dev/sdc1 /mnt
+mount /dev/sd<+><num> /mnt
 cp /run/archiso/bootmnt/mirrorlist /etc/pacman.d/
 pacstrap /mnt base linux linux-firmware base-devel
 genfstab -U /mnt >> /mnt/etc/fstab
