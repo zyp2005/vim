@@ -7,6 +7,10 @@
 
 #new_window 1pixel
 
+for_window [instance="qq"] floating enable
+for_window [instance="qq"] border none
+for_window [instance="netease-cloud-music"] floating enable
+for_window [instance="netease-cloud-music"] border none
 
 
 new_window none
