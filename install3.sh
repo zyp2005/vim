@@ -8,5 +8,5 @@ passwd test
 echo " %wheel ALL=(ALL)ALL" >> /etc/sudoers
 cd /home/zyp
 su zyp
-git clone https://github.com/zyp2005/vim.git
+#git clone https://github.com/zyp2005/vim.git
 echo "please reboot\n"
