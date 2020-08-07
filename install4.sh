@@ -1,6 +1,6 @@
 sudo pacman -S xf86-video-intel xorg xorg-xinit wqy-microhei i3 feh compton \
 	polybar ttf-font-awesome sakura clang fcitx-im fcitx-configtool \
-	chromium fcitx-googlepinyin rofi curl neovim alsa alsa-utils \
+	chromium fcitx-googlepinyin rofi curl  alsa alsa-utils \
 	nodejs npm fzf yay ranger
 mkdir .config
 mkdir .config/i3 .config/polybar .config/sakura
@@ -24,6 +24,11 @@ sudo pacman -S alsa-firmware alsa-tools pulseaudio-alsa
 yay -S lf powerline-fonts-git
 yay -S mate-media
 yay -S wps-office-cn cups  ttf-wps-fonts wps-office-mime-cn wps-office-mui-zh-cn
+yay -S adobe-source-code-pro-fonts adobe-source-han-mono-cn-fonts
+adobe-source-han-sans-cn-fonts adobe-source-han-sans-tw-fonts adobe-source-serif-pro-fonts 
+cmake ctags wget elinks gdb go lazygit ccls lua mate-volume-control neofetch 
+neovim-nightly neovim-remote nerd-fonts-source-code-pro npm
+ruby w3m you-get yarn 
 echo "done"
 
 
