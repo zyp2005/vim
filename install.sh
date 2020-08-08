@@ -3,7 +3,7 @@ wifi-menu
 ping baidu.com 
 timedatectl set-ntp true
 fdisk /dev/sd<+>
-mkfs.ext4 /dev/sdc1
+mkfs.ext4 /dev/sd<+><num>
 mount /dev/sd<+><num> /mnt
 cp /run/archiso/bootmnt/mirrorlist /etc/pacman.d/
 pacstrap /mnt base linux linux-firmware base-devel
@@ -12,6 +12,6 @@ cp /run/archiso/bootmnt/install2.sh /mnt
 cp /run/archiso/bootmnt/pacman.conf /mnt/etc
 #cp /run/archiso/bootmnt/install2.sh /
 arch-chroot /mnt ./install2.sh
-umount /mnt /dev/sdc1
+umount /mnt /dev/sd<+><num>
 
 
