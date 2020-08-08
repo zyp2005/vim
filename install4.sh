@@ -29,7 +29,7 @@ yay -S alsa-firmware alsa-tools pulseaudio-alsa
 	adobe-source-han-sans-cn-fonts  adobe-source-serif-pro-fonts \
 	cmake ctags wget elinks gdb go lazygit ccls lua mate-volume-control neofetch \
 	neovim-nightly neovim-remote nerd-fonts-source-code-pro npm \
-	ruby w3m you-get yarn cargo qq-linux
+	ruby w3m you-get yarn cargo qq-linux bat
 sudo cp -r vim/winfonts /usr/share/fonts/winfonts/
 sudo cp  vim/fonts.conf  /etc/fonts/fonts.conf
 cd /usr/share/fonts/winfonts/
